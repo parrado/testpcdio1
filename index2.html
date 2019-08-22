@@ -1,0 +1,32 @@
+<!-- Página WEB para el cliente .
+Alexander López-Parrado, PhD, 2019-->
+
+
+
+<!DOCTYPE html>
+<html>
+<!--Encabezado para que las tildes y la ñ se muestren correctamente -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<script src="myscripts.js"></script>
+<h1>Ejemplo de un botón:</h1>
+
+<!-- Crea un nuevo párrafo-->
+<p>Este botón ejecuta una función de JavaScript que lee la última temperatura de un canal de ThingSpeak.</p>
+
+
+<!-- Crea un botón, al dar click sobre él se ejecutará la función msg() de myscripts.js-->
+<form>
+  <input type="button" value="Click Aquí" onclick="msg()">
+</form>
+
+<!-- Crea un nuevo párrafo-->
+<p>Gráfica de la temperatura.</p>
+
+<!-- Inserta el gráfico de temperatura de ThingSpeak-->
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/333785/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+
+</body>
+</html>
